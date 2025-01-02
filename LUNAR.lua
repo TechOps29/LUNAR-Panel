@@ -65,6 +65,7 @@ local FollowOnGitHub = Instance.new("TextButton")
 LUNAR.Name = "LUNAR"
 LUNAR.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
 LUNAR.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+LUNAR.ResetOnSpawn = false
 
 LUNAR_LOADING.Name = "LUNAR_LOADING"
 LUNAR_LOADING.Parent = LUNAR
@@ -653,7 +654,7 @@ FollowOnGitHub.TextSize = 30.000
 
 -- Scripts:
 
-local function TITUY_fake_script() -- LUNAR_LOADING.DragScript 
+local function ZUCXSRK_fake_script() -- LUNAR_LOADING.DragScript 
 	local script = Instance.new('LocalScript', LUNAR_LOADING)
 
 	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
@@ -696,8 +697,8 @@ local function TITUY_fake_script() -- LUNAR_LOADING.DragScript
 	end)
 	
 end
-coroutine.wrap(TITUY_fake_script)()
-local function QNYEZ_fake_script() -- LUNAR_LOADING.Loading 
+coroutine.wrap(ZUCXSRK_fake_script)()
+local function MKWMXP_fake_script() -- LUNAR_LOADING.Loading 
 	local script = Instance.new('LocalScript', LUNAR_LOADING)
 
 	local LOADINGBAR = script.Parent:FindFirstChild("LOADINGBAR")
@@ -736,8 +737,8 @@ local function QNYEZ_fake_script() -- LUNAR_LOADING.Loading
 	LUNAR_MAIN.Visible = true
 	
 end
-coroutine.wrap(QNYEZ_fake_script)()
-local function FCCG_fake_script() -- Exit.Close 
+coroutine.wrap(MKWMXP_fake_script)()
+local function WEQAAFB_fake_script() -- Exit.Close 
 	local script = Instance.new('LocalScript', Exit)
 
 	-- References to GUI and button
@@ -805,8 +806,8 @@ local function FCCG_fake_script() -- Exit.Close
 	game:GetService("UserInputService").InputBegan:Connect(reopenFrame)
 	
 end
-coroutine.wrap(FCCG_fake_script)()
-local function SSFUC_fake_script() -- PlayersProfile.ShowProfilePic 
+coroutine.wrap(WEQAAFB_fake_script)()
+local function MWIE_fake_script() -- PlayersProfile.ShowProfilePic 
 	local script = Instance.new('LocalScript', PlayersProfile)
 
 	-- Get the player and the ImageLabel
@@ -827,8 +828,8 @@ local function SSFUC_fake_script() -- PlayersProfile.ShowProfilePic
 	displayProfileImage()
 	
 end
-coroutine.wrap(SSFUC_fake_script)()
-local function SQSZIQK_fake_script() -- PlayerGreeting.Greet 
+coroutine.wrap(MWIE_fake_script)()
+local function DNFGSYL_fake_script() -- PlayerGreeting.Greet 
 	local script = Instance.new('LocalScript', PlayerGreeting)
 
 	-- Get the player and the PlayerGreeting TextLabel
@@ -845,8 +846,8 @@ local function SQSZIQK_fake_script() -- PlayerGreeting.Greet
 	greetPlayer()
 	
 end
-coroutine.wrap(SQSZIQK_fake_script)()
-local function VETG_fake_script() -- LUNAR_MAIN.DragScript 
+coroutine.wrap(DNFGSYL_fake_script)()
+local function FCADGDG_fake_script() -- LUNAR_MAIN.DragScript 
 	local script = Instance.new('LocalScript', LUNAR_MAIN)
 
 	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
@@ -889,8 +890,8 @@ local function VETG_fake_script() -- LUNAR_MAIN.DragScript
 	end)
 	
 end
-coroutine.wrap(VETG_fake_script)()
-local function WVIQR_fake_script() -- Nameless_Admin.ExecuteNA 
+coroutine.wrap(FCADGDG_fake_script)()
+local function TEGK_fake_script() -- Nameless_Admin.ExecuteNA 
 	local script = Instance.new('LocalScript', Nameless_Admin)
 
 	-- Reference to the TextButton
@@ -927,8 +928,8 @@ local function WVIQR_fake_script() -- Nameless_Admin.ExecuteNA
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(WVIQR_fake_script)()
-local function TWGTGG_fake_script() -- Infinite_Yield.ExecuteIY 
+coroutine.wrap(TEGK_fake_script)()
+local function BLFX_fake_script() -- Infinite_Yield.ExecuteIY 
 	local script = Instance.new('LocalScript', Infinite_Yield)
 
 	-- Reference to the TextButton
@@ -965,8 +966,8 @@ local function TWGTGG_fake_script() -- Infinite_Yield.ExecuteIY
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(TWGTGG_fake_script)()
-local function AJBJ_fake_script() -- Fisch_Raito_Hub.ExecuteRaito 
+coroutine.wrap(BLFX_fake_script)()
+local function JOSGU_fake_script() -- Fisch_Raito_Hub.ExecuteRaito 
 	local script = Instance.new('LocalScript', Fisch_Raito_Hub)
 
 	-- Reference to the TextButton
@@ -1003,8 +1004,8 @@ local function AJBJ_fake_script() -- Fisch_Raito_Hub.ExecuteRaito
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(AJBJ_fake_script)()
-local function GIZGDR_fake_script() -- Fisch_CupPink_Hub.ExecuteCupPink 
+coroutine.wrap(JOSGU_fake_script)()
+local function FPHDUPQ_fake_script() -- Fisch_CupPink_Hub.ExecuteCupPink 
 	local script = Instance.new('LocalScript', Fisch_CupPink_Hub)
 
 	-- Reference to the TextButton
@@ -1041,8 +1042,8 @@ local function GIZGDR_fake_script() -- Fisch_CupPink_Hub.ExecuteCupPink
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(GIZGDR_fake_script)()
-local function QZGNAU_fake_script() -- Fisch_Naoki_Hub.ExecuteNaoki 
+coroutine.wrap(FPHDUPQ_fake_script)()
+local function TRSMWT_fake_script() -- Fisch_Naoki_Hub.ExecuteNaoki 
 	local script = Instance.new('LocalScript', Fisch_Naoki_Hub)
 
 	-- Reference to the TextButton
@@ -1079,8 +1080,8 @@ local function QZGNAU_fake_script() -- Fisch_Naoki_Hub.ExecuteNaoki
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(QZGNAU_fake_script)()
-local function NKMXM_fake_script() -- PrisonLife_PrisonWare.ExecutePrisonWare 
+coroutine.wrap(TRSMWT_fake_script)()
+local function WIDK_fake_script() -- PrisonLife_PrisonWare.ExecutePrisonWare 
 	local script = Instance.new('LocalScript', PrisonLife_PrisonWare)
 
 	-- Reference to the TextButton
@@ -1117,8 +1118,8 @@ local function NKMXM_fake_script() -- PrisonLife_PrisonWare.ExecutePrisonWare
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(NKMXM_fake_script)()
-local function GLAKJIQ_fake_script() -- Doors_BlackKing.ExecuteBlackKing 
+coroutine.wrap(WIDK_fake_script)()
+local function HNTK_fake_script() -- Doors_BlackKing.ExecuteBlackKing 
 	local script = Instance.new('LocalScript', Doors_BlackKing)
 
 	-- Reference to the TextButton
@@ -1155,8 +1156,8 @@ local function GLAKJIQ_fake_script() -- Doors_BlackKing.ExecuteBlackKing
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(GLAKJIQ_fake_script)()
-local function BPJZIKT_fake_script() -- Brookhaven_The_DarkOnes.ExecuteTheDarkOnes1 
+coroutine.wrap(HNTK_fake_script)()
+local function SNSLSC_fake_script() -- Brookhaven_The_DarkOnes.ExecuteTheDarkOnes1 
 	local script = Instance.new('LocalScript', Brookhaven_The_DarkOnes)
 
 	-- Reference to the TextButton
@@ -1193,8 +1194,8 @@ local function BPJZIKT_fake_script() -- Brookhaven_The_DarkOnes.ExecuteTheDarkOn
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(BPJZIKT_fake_script)()
-local function LPIMK_fake_script() -- BladeBall_The_Darkones.ExecuteTHeDarkOnes2 
+coroutine.wrap(SNSLSC_fake_script)()
+local function EHTM_fake_script() -- BladeBall_The_Darkones.ExecuteTHeDarkOnes2 
 	local script = Instance.new('LocalScript', BladeBall_The_Darkones)
 
 	-- Reference to the TextButton
@@ -1231,8 +1232,8 @@ local function LPIMK_fake_script() -- BladeBall_The_Darkones.ExecuteTHeDarkOnes2
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(LPIMK_fake_script)()
-local function ZJYGC_fake_script() -- Bloxfruits_Cokka_Hub.ExecuteCokkaHub 
+coroutine.wrap(EHTM_fake_script)()
+local function DLPSNU_fake_script() -- Bloxfruits_Cokka_Hub.ExecuteCokkaHub 
 	local script = Instance.new('LocalScript', Bloxfruits_Cokka_Hub)
 
 	-- Reference to the TextButton
@@ -1269,8 +1270,8 @@ local function ZJYGC_fake_script() -- Bloxfruits_Cokka_Hub.ExecuteCokkaHub
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(ZJYGC_fake_script)()
-local function CRGQJDI_fake_script() -- Cheats.Search Function 
+coroutine.wrap(DLPSNU_fake_script)()
+local function HDUXPPF_fake_script() -- Cheats.Search Function 
 	local script = Instance.new('LocalScript', Cheats)
 
 	local searchbar = script.Parent:FindFirstChild("Searchbar") -- TextBox
@@ -1343,8 +1344,8 @@ local function CRGQJDI_fake_script() -- Cheats.Search Function
 	end)
 	
 end
-coroutine.wrap(CRGQJDI_fake_script)()
-local function FGCOGI_fake_script() -- DayOrNightOrDefault.TimeChange 
+coroutine.wrap(HDUXPPF_fake_script)()
+local function RWKWYP_fake_script() -- DayOrNightOrDefault.TimeChange 
 	local script = Instance.new('LocalScript', DayOrNightOrDefault)
 
 	-- Parent this script to the Button object in the GUI
@@ -1399,8 +1400,8 @@ local function FGCOGI_fake_script() -- DayOrNightOrDefault.TimeChange
 	updateTimeOfDay(states[currentStateIndex])
 	
 end
-coroutine.wrap(FGCOGI_fake_script)()
-local function JGYFIA_fake_script() -- OwnerPic.ShowIc 
+coroutine.wrap(RWKWYP_fake_script)()
+local function RBTAK_fake_script() -- OwnerPic.ShowIc 
 	local script = Instance.new('LocalScript', OwnerPic)
 
 	local userId = 7208746866 -- The Roblox User ID
@@ -1422,8 +1423,8 @@ local function JGYFIA_fake_script() -- OwnerPic.ShowIc
 	setProfilePicture(userId)
 	
 end
-coroutine.wrap(JGYFIA_fake_script)()
-local function GNVYCDP_fake_script() -- Discord.Join 
+coroutine.wrap(RBTAK_fake_script)()
+local function RUVBWU_fake_script() -- Discord.Join 
 	local script = Instance.new('LocalScript', Discord)
 
 	local button = script.Parent -- Reference to the button
@@ -1478,8 +1479,8 @@ local function GNVYCDP_fake_script() -- Discord.Join
 	button.MouseButton1Click:Connect(promptDiscordInvite)
 	
 end
-coroutine.wrap(GNVYCDP_fake_script)()
-local function HIRX_fake_script() -- FollowOnGitHub.Follow 
+coroutine.wrap(RUVBWU_fake_script)()
+local function RDZSXO_fake_script() -- FollowOnGitHub.Follow 
 	local script = Instance.new('LocalScript', FollowOnGitHub)
 
 	local button = script.Parent -- Reference to the button
@@ -1534,8 +1535,8 @@ local function HIRX_fake_script() -- FollowOnGitHub.Follow
 	button.MouseButton1Click:Connect(promptGitHubFollow)
 	
 end
-coroutine.wrap(HIRX_fake_script)()
-local function OIHZMV_fake_script() -- LUNAR_MAIN.OpenFrameFunction 
+coroutine.wrap(RDZSXO_fake_script)()
+local function KNNZNUV_fake_script() -- LUNAR_MAIN.OpenFrameFunction 
 	local script = Instance.new('LocalScript', LUNAR_MAIN)
 
 	-- Get references to the buttons and frames
@@ -1587,8 +1588,8 @@ local function OIHZMV_fake_script() -- LUNAR_MAIN.OpenFrameFunction
 	end)
 	
 end
-coroutine.wrap(OIHZMV_fake_script)()
-local function GLGJ_fake_script() -- LUNAR.LUNAR_START 
+coroutine.wrap(KNNZNUV_fake_script)()
+local function QTCCVAR_fake_script() -- LUNAR.LUNAR_START 
 	local script = Instance.new('LocalScript', LUNAR)
 
 	print("Running LUNAR...")
@@ -1605,4 +1606,4 @@ local function GLGJ_fake_script() -- LUNAR.LUNAR_START
 	print(Ascii)
 	
 end
-coroutine.wrap(GLGJ_fake_script)()
+coroutine.wrap(QTCCVAR_fake_script)()
