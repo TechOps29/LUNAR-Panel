@@ -52,6 +52,7 @@ local PremiumTitle = Instance.new("TextLabel")
 local TextBox = Instance.new("TextBox")
 local App_Icon_2 = Instance.new("ImageLabel")
 local TextLabel_3 = Instance.new("TextLabel")
+local submitButton = Instance.new("TextButton")
 local DevelopmentTeam = Instance.new("Frame")
 local TitleDevTeam = Instance.new("TextLabel")
 local OwnerPic = Instance.new("ImageLabel")
@@ -59,6 +60,10 @@ local NameOnRBLXandGitHub = Instance.new("TextLabel")
 local Advertisement_2 = Instance.new("TextLabel")
 local Discord = Instance.new("TextButton")
 local FollowOnGitHub = Instance.new("TextButton")
+local PremiumOptionFrame = Instance.new("Frame")
+local Title_3 = Instance.new("TextLabel")
+local TextBox_2 = Instance.new("TextBox")
+local TextButton = Instance.new("TextButton")
 
 --Properties:
 
@@ -566,6 +571,19 @@ TextLabel_3.Text = "+"
 TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
 TextLabel_3.TextSize = 30.000
 
+submitButton.Name = "submitButton"
+submitButton.Parent = Premiumframe
+submitButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+submitButton.BackgroundTransparency = 1.000
+submitButton.BorderColor3 = Color3.fromRGB(0, 0, 0)
+submitButton.BorderSizePixel = 0
+submitButton.Position = UDim2.new(0.332558125, 0, 0.58446604, 0)
+submitButton.Size = UDim2.new(0, 200, 0, 50)
+submitButton.Font = Enum.Font.SourceSans
+submitButton.Text = "Submit"
+submitButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+submitButton.TextSize = 30.000
+
 DevelopmentTeam.Name = "DevelopmentTeam"
 DevelopmentTeam.Parent = LUNAR_MAIN
 DevelopmentTeam.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
@@ -652,9 +670,58 @@ FollowOnGitHub.Text = "| Follow On GitHub"
 FollowOnGitHub.TextColor3 = Color3.fromRGB(255, 255, 255)
 FollowOnGitHub.TextSize = 30.000
 
+PremiumOptionFrame.Name = "PremiumOptionFrame"
+PremiumOptionFrame.Parent = LUNAR_MAIN
+PremiumOptionFrame.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+PremiumOptionFrame.BackgroundTransparency = 1.000
+PremiumOptionFrame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+PremiumOptionFrame.BorderSizePixel = 0
+PremiumOptionFrame.Position = UDim2.new(0.104166664, 0, 0, 0)
+PremiumOptionFrame.Size = UDim2.new(0, 860, 0, 515)
+PremiumOptionFrame.Visible = false
+
+Title_3.Name = "Title"
+Title_3.Parent = PremiumOptionFrame
+Title_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.BackgroundTransparency = 1.000
+Title_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Title_3.BorderSizePixel = 0
+Title_3.Position = UDim2.new(-0.0232558139, 0, 0.902912617, 0)
+Title_3.Size = UDim2.new(0, 880, 0, 50)
+Title_3.Font = Enum.Font.SourceSans
+Title_3.Text = "Thanks For Buying a license Key!"
+Title_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+Title_3.TextSize = 30.000
+
+TextBox_2.Parent = PremiumOptionFrame
+TextBox_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.BackgroundTransparency = 1.000
+TextBox_2.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextBox_2.Position = UDim2.new(0.0897786021, 0, 0.339237422, 0)
+TextBox_2.Size = UDim2.new(0, 633, 0, 92)
+TextBox_2.Font = Enum.Font.SourceSans
+TextBox_2.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.PlaceholderText = "Script Here"
+TextBox_2.Text = ""
+TextBox_2.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox_2.TextSize = 50.000
+TextBox_2.TextWrapped = true
+
+TextButton.Parent = PremiumOptionFrame
+TextButton.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.BackgroundTransparency = 9.000
+TextButton.BorderColor3 = Color3.fromRGB(27, 42, 53)
+TextButton.Position = UDim2.new(0.334514111, 0, 0.582919896, 0)
+TextButton.Size = UDim2.new(0, 213, 0, 51)
+TextButton.Font = Enum.Font.SourceSans
+TextButton.Text = "Execute"
+TextButton.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextButton.TextSize = 30.000
+TextButton.TextWrapped = true
+
 -- Scripts:
 
-local function ZUCXSRK_fake_script() -- LUNAR_LOADING.DragScript 
+local function OKCPO_fake_script() -- LUNAR_LOADING.DragScript 
 	local script = Instance.new('LocalScript', LUNAR_LOADING)
 
 	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
@@ -697,8 +764,8 @@ local function ZUCXSRK_fake_script() -- LUNAR_LOADING.DragScript
 	end)
 	
 end
-coroutine.wrap(ZUCXSRK_fake_script)()
-local function MKWMXP_fake_script() -- LUNAR_LOADING.Loading 
+coroutine.wrap(OKCPO_fake_script)()
+local function WERPB_fake_script() -- LUNAR_LOADING.Loading 
 	local script = Instance.new('LocalScript', LUNAR_LOADING)
 
 	local LOADINGBAR = script.Parent:FindFirstChild("LOADINGBAR")
@@ -737,8 +804,8 @@ local function MKWMXP_fake_script() -- LUNAR_LOADING.Loading
 	LUNAR_MAIN.Visible = true
 	
 end
-coroutine.wrap(MKWMXP_fake_script)()
-local function WEQAAFB_fake_script() -- Exit.Close 
+coroutine.wrap(WERPB_fake_script)()
+local function VCYRT_fake_script() -- Exit.Close 
 	local script = Instance.new('LocalScript', Exit)
 
 	-- References to GUI and button
@@ -806,8 +873,8 @@ local function WEQAAFB_fake_script() -- Exit.Close
 	game:GetService("UserInputService").InputBegan:Connect(reopenFrame)
 	
 end
-coroutine.wrap(WEQAAFB_fake_script)()
-local function MWIE_fake_script() -- PlayersProfile.ShowProfilePic 
+coroutine.wrap(VCYRT_fake_script)()
+local function TLWUMTO_fake_script() -- PlayersProfile.ShowProfilePic 
 	local script = Instance.new('LocalScript', PlayersProfile)
 
 	-- Get the player and the ImageLabel
@@ -828,8 +895,8 @@ local function MWIE_fake_script() -- PlayersProfile.ShowProfilePic
 	displayProfileImage()
 	
 end
-coroutine.wrap(MWIE_fake_script)()
-local function DNFGSYL_fake_script() -- PlayerGreeting.Greet 
+coroutine.wrap(TLWUMTO_fake_script)()
+local function CLNCPF_fake_script() -- PlayerGreeting.Greet 
 	local script = Instance.new('LocalScript', PlayerGreeting)
 
 	-- Get the player and the PlayerGreeting TextLabel
@@ -846,8 +913,8 @@ local function DNFGSYL_fake_script() -- PlayerGreeting.Greet
 	greetPlayer()
 	
 end
-coroutine.wrap(DNFGSYL_fake_script)()
-local function FCADGDG_fake_script() -- LUNAR_MAIN.DragScript 
+coroutine.wrap(CLNCPF_fake_script)()
+local function QGVR_fake_script() -- LUNAR_MAIN.DragScript 
 	local script = Instance.new('LocalScript', LUNAR_MAIN)
 
 	--Not made by me, check out this video: https://www.youtube.com/watch?v=z25nyNBG7Js&t=22s
@@ -890,8 +957,8 @@ local function FCADGDG_fake_script() -- LUNAR_MAIN.DragScript
 	end)
 	
 end
-coroutine.wrap(FCADGDG_fake_script)()
-local function TEGK_fake_script() -- Nameless_Admin.ExecuteNA 
+coroutine.wrap(QGVR_fake_script)()
+local function MGINJ_fake_script() -- Nameless_Admin.ExecuteNA 
 	local script = Instance.new('LocalScript', Nameless_Admin)
 
 	-- Reference to the TextButton
@@ -928,8 +995,8 @@ local function TEGK_fake_script() -- Nameless_Admin.ExecuteNA
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(TEGK_fake_script)()
-local function BLFX_fake_script() -- Infinite_Yield.ExecuteIY 
+coroutine.wrap(MGINJ_fake_script)()
+local function REGOYE_fake_script() -- Infinite_Yield.ExecuteIY 
 	local script = Instance.new('LocalScript', Infinite_Yield)
 
 	-- Reference to the TextButton
@@ -966,8 +1033,8 @@ local function BLFX_fake_script() -- Infinite_Yield.ExecuteIY
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(BLFX_fake_script)()
-local function JOSGU_fake_script() -- Fisch_Raito_Hub.ExecuteRaito 
+coroutine.wrap(REGOYE_fake_script)()
+local function AISAM_fake_script() -- Fisch_Raito_Hub.ExecuteRaito 
 	local script = Instance.new('LocalScript', Fisch_Raito_Hub)
 
 	-- Reference to the TextButton
@@ -1004,8 +1071,8 @@ local function JOSGU_fake_script() -- Fisch_Raito_Hub.ExecuteRaito
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(JOSGU_fake_script)()
-local function FPHDUPQ_fake_script() -- Fisch_CupPink_Hub.ExecuteCupPink 
+coroutine.wrap(AISAM_fake_script)()
+local function JQPUQJC_fake_script() -- Fisch_CupPink_Hub.ExecuteCupPink 
 	local script = Instance.new('LocalScript', Fisch_CupPink_Hub)
 
 	-- Reference to the TextButton
@@ -1042,8 +1109,8 @@ local function FPHDUPQ_fake_script() -- Fisch_CupPink_Hub.ExecuteCupPink
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(FPHDUPQ_fake_script)()
-local function TRSMWT_fake_script() -- Fisch_Naoki_Hub.ExecuteNaoki 
+coroutine.wrap(JQPUQJC_fake_script)()
+local function SBYRIMG_fake_script() -- Fisch_Naoki_Hub.ExecuteNaoki 
 	local script = Instance.new('LocalScript', Fisch_Naoki_Hub)
 
 	-- Reference to the TextButton
@@ -1080,8 +1147,8 @@ local function TRSMWT_fake_script() -- Fisch_Naoki_Hub.ExecuteNaoki
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(TRSMWT_fake_script)()
-local function WIDK_fake_script() -- PrisonLife_PrisonWare.ExecutePrisonWare 
+coroutine.wrap(SBYRIMG_fake_script)()
+local function YUOZG_fake_script() -- PrisonLife_PrisonWare.ExecutePrisonWare 
 	local script = Instance.new('LocalScript', PrisonLife_PrisonWare)
 
 	-- Reference to the TextButton
@@ -1118,8 +1185,8 @@ local function WIDK_fake_script() -- PrisonLife_PrisonWare.ExecutePrisonWare
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(WIDK_fake_script)()
-local function HNTK_fake_script() -- Doors_BlackKing.ExecuteBlackKing 
+coroutine.wrap(YUOZG_fake_script)()
+local function MOGNAQ_fake_script() -- Doors_BlackKing.ExecuteBlackKing 
 	local script = Instance.new('LocalScript', Doors_BlackKing)
 
 	-- Reference to the TextButton
@@ -1156,8 +1223,8 @@ local function HNTK_fake_script() -- Doors_BlackKing.ExecuteBlackKing
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(HNTK_fake_script)()
-local function SNSLSC_fake_script() -- Brookhaven_The_DarkOnes.ExecuteTheDarkOnes1 
+coroutine.wrap(MOGNAQ_fake_script)()
+local function OPKCPM_fake_script() -- Brookhaven_The_DarkOnes.ExecuteTheDarkOnes1 
 	local script = Instance.new('LocalScript', Brookhaven_The_DarkOnes)
 
 	-- Reference to the TextButton
@@ -1194,8 +1261,8 @@ local function SNSLSC_fake_script() -- Brookhaven_The_DarkOnes.ExecuteTheDarkOne
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(SNSLSC_fake_script)()
-local function EHTM_fake_script() -- BladeBall_The_Darkones.ExecuteTHeDarkOnes2 
+coroutine.wrap(OPKCPM_fake_script)()
+local function BWRL_fake_script() -- BladeBall_The_Darkones.ExecuteTHeDarkOnes2 
 	local script = Instance.new('LocalScript', BladeBall_The_Darkones)
 
 	-- Reference to the TextButton
@@ -1232,8 +1299,8 @@ local function EHTM_fake_script() -- BladeBall_The_Darkones.ExecuteTHeDarkOnes2
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(EHTM_fake_script)()
-local function DLPSNU_fake_script() -- Bloxfruits_Cokka_Hub.ExecuteCokkaHub 
+coroutine.wrap(BWRL_fake_script)()
+local function PTGELR_fake_script() -- Bloxfruits_Cokka_Hub.ExecuteCokkaHub 
 	local script = Instance.new('LocalScript', Bloxfruits_Cokka_Hub)
 
 	-- Reference to the TextButton
@@ -1270,8 +1337,8 @@ local function DLPSNU_fake_script() -- Bloxfruits_Cokka_Hub.ExecuteCokkaHub
 	button.MouseButton1Click:Connect(onClick)
 	
 end
-coroutine.wrap(DLPSNU_fake_script)()
-local function HDUXPPF_fake_script() -- Cheats.Search Function 
+coroutine.wrap(PTGELR_fake_script)()
+local function WYZUONF_fake_script() -- Cheats.Search Function 
 	local script = Instance.new('LocalScript', Cheats)
 
 	local searchbar = script.Parent:FindFirstChild("Searchbar") -- TextBox
@@ -1344,8 +1411,8 @@ local function HDUXPPF_fake_script() -- Cheats.Search Function
 	end)
 	
 end
-coroutine.wrap(HDUXPPF_fake_script)()
-local function RWKWYP_fake_script() -- DayOrNightOrDefault.TimeChange 
+coroutine.wrap(WYZUONF_fake_script)()
+local function AOQU_fake_script() -- DayOrNightOrDefault.TimeChange 
 	local script = Instance.new('LocalScript', DayOrNightOrDefault)
 
 	-- Parent this script to the Button object in the GUI
@@ -1400,8 +1467,40 @@ local function RWKWYP_fake_script() -- DayOrNightOrDefault.TimeChange
 	updateTimeOfDay(states[currentStateIndex])
 	
 end
-coroutine.wrap(RWKWYP_fake_script)()
-local function RBTAK_fake_script() -- OwnerPic.ShowIc 
+coroutine.wrap(AOQU_fake_script)()
+local function EODIW_fake_script() -- TextBox.KeyHandling 
+	local script = Instance.new('LocalScript', TextBox)
+
+	-- The Premium License Key
+	local premiumKey = "A1B2C-3D4E5F-G6H7J8K-9L0M@N-PQR5S6T-UVWX7YZ"
+	
+	-- References to GUI Elements
+	local textBox = script.Parent -- Assuming the script is a child of the TextBox
+	local submitButton = script.Parent.Parent.submitButton -- Button to confirm the entry
+	local currentFrame = script.Parent.Parent -- Frame containing the TextBox
+	local premiumFrame = script.Parent.Parent.Parent:FindFirstChild("PremiumOptionFrame") -- Premium options frame
+	
+	-- Function to handle key validation
+	local function validateKey()
+		local enteredKey = textBox.Text
+		if enteredKey == premiumKey then
+			currentFrame.Visible = false -- Hide the current frame
+			if premiumFrame then
+				premiumFrame.Visible = true -- Show the premium frame
+			else
+				warn("PremiumOptionFrame not found!")
+			end
+		else
+			warn("Invalid License Key!")
+		end
+	end
+	
+	-- Connect the validation function to the button click
+	submitButton.MouseButton1Click:Connect(validateKey)
+	
+end
+coroutine.wrap(EODIW_fake_script)()
+local function WKCNHTM_fake_script() -- OwnerPic.ShowIc 
 	local script = Instance.new('LocalScript', OwnerPic)
 
 	local userId = 7208746866 -- The Roblox User ID
@@ -1423,8 +1522,8 @@ local function RBTAK_fake_script() -- OwnerPic.ShowIc
 	setProfilePicture(userId)
 	
 end
-coroutine.wrap(RBTAK_fake_script)()
-local function RUVBWU_fake_script() -- Discord.Join 
+coroutine.wrap(WKCNHTM_fake_script)()
+local function SZDW_fake_script() -- Discord.Join 
 	local script = Instance.new('LocalScript', Discord)
 
 	local button = script.Parent -- Reference to the button
@@ -1479,8 +1578,8 @@ local function RUVBWU_fake_script() -- Discord.Join
 	button.MouseButton1Click:Connect(promptDiscordInvite)
 	
 end
-coroutine.wrap(RUVBWU_fake_script)()
-local function RDZSXO_fake_script() -- FollowOnGitHub.Follow 
+coroutine.wrap(SZDW_fake_script)()
+local function BQYHPS_fake_script() -- FollowOnGitHub.Follow 
 	local script = Instance.new('LocalScript', FollowOnGitHub)
 
 	local button = script.Parent -- Reference to the button
@@ -1535,8 +1634,8 @@ local function RDZSXO_fake_script() -- FollowOnGitHub.Follow
 	button.MouseButton1Click:Connect(promptGitHubFollow)
 	
 end
-coroutine.wrap(RDZSXO_fake_script)()
-local function KNNZNUV_fake_script() -- LUNAR_MAIN.OpenFrameFunction 
+coroutine.wrap(BQYHPS_fake_script)()
+local function FQEL_fake_script() -- LUNAR_MAIN.OpenFrameFunction 
 	local script = Instance.new('LocalScript', LUNAR_MAIN)
 
 	-- Get references to the buttons and frames
@@ -1551,6 +1650,7 @@ local function KNNZNUV_fake_script() -- LUNAR_MAIN.OpenFrameFunction
 	local premiumFrame = game.Players.LocalPlayer.PlayerGui.LUNAR.LUNAR_MAIN.Premiumframe
 	local optionsFrame = game.Players.LocalPlayer.PlayerGui.LUNAR.LUNAR_MAIN.Options
 	local heatsFrame = game.Players.LocalPlayer.PlayerGui.LUNAR.LUNAR_MAIN.Cheats
+	local PremiumOptionframe = game.Players.LocalPlayer.PlayerGui.LUNAR.LUNAR_MAIN.PremiumOptionFrame
 	
 	-- Function to hide all frames
 	local function hideAllFrames()
@@ -1559,6 +1659,7 @@ local function KNNZNUV_fake_script() -- LUNAR_MAIN.OpenFrameFunction
 		premiumFrame.Visible = false
 		optionsFrame.Visible = false
 		heatsFrame.Visible = false
+		PremiumOptionframe.Visible = false
 	end
 	
 	-- Button functionality
@@ -1588,10 +1689,19 @@ local function KNNZNUV_fake_script() -- LUNAR_MAIN.OpenFrameFunction
 	end)
 	
 end
-coroutine.wrap(KNNZNUV_fake_script)()
-local function QTCCVAR_fake_script() -- LUNAR.LUNAR_START 
+coroutine.wrap(FQEL_fake_script)()
+local function NSPKIX_fake_script() -- TextButton.LocalScript 
+	local script = Instance.new('LocalScript', TextButton)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.ExecuteEvent:FireServer(script.Parent.Parent.TextBox.Text)
+		end)
+end
+coroutine.wrap(NSPKIX_fake_script)()
+local function CXZOGP_fake_script() -- LUNAR.LUNAR_START 
 	local script = Instance.new('LocalScript', LUNAR)
 
+	print("Update Log: Added Premium Functions!")
 	print("Running LUNAR...")
 	print("Made By LunarPulse0 On RBLX")
 	local Ascii = [[
@@ -1606,4 +1716,4 @@ local function QTCCVAR_fake_script() -- LUNAR.LUNAR_START
 	print(Ascii)
 	
 end
-coroutine.wrap(QTCCVAR_fake_script)()
+coroutine.wrap(CXZOGP_fake_script)()
